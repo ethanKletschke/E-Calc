@@ -29,5 +29,9 @@ sign = "+" | "-";
 (* Statement separator *)
 statement_separator = { whitespace }, ";", { whitespace };
 
+(* TODO -> Define arithmetic operators *)
+(* Operators *)
+assignment_op = { whitespace }, "=", { whitespace };
+
 (* Whitespace *)
 whitespace = " " | "\t" | "\n";
