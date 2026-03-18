@@ -1,7 +1,7 @@
 project-meta:
   project-name: Calculator EBNF
   date-started: 2026-03-16
-  last-updated: 2026-03-17 # TODO -> update
+  last-updated: 2026-03-18 # TODO -> update
   languages:
     - Extended Backus-Naur Form (ISO standard)
   status: Experimental
