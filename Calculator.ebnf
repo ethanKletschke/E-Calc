@@ -10,8 +10,18 @@ rhs = integer | variable_name | arithmetic_statement;
 (* Left-hand side of the assignment *)
 lhs = variable_name;
 
-(* An arithmetic statement *)
-arithmetic_statement = (integer | variable_name), arithmetic_operator, (integer | variable_name);
+(*
+An arithmetic statement.
+
+Supports the following:
+1 - 1
+x + 2
+x * y
+z / 0
+*)
+arithmetic_statement =
+    (integer | variable_name),
+    { arithmetic_operator, (integer | variable_name) };
 
 (* An all-uppercase or all-lowercase variable name *)
 variable_name = all_upper_name | all_lower_name;
