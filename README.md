@@ -17,3 +17,4 @@ The EBNF file currently defines:
 - Signs (`+` and `-`)
 - Integers with optional signs
 - Simple assignment of values to variables (RHS assigned to LHS, or `lhs = rhs`)
+- Arithmetic operators
