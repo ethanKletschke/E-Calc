@@ -2,10 +2,13 @@
 assignment_statement = lhs, assignment_op, rhs, statement_separator;
 
 (* Right-hand side of the assignment *)
-rhs = integer | variable_name;
+rhs = integer | variable_name | arithmetic_statement;
 
 (* Left-hand side of the assignment *)
 lhs = variable_name;
+
+(* An arithmetic statement *)
+arithmetic_statement = (integer | variable_name), arithmetic_operator, (integer | variable_name);
 
 (* An all-uppercase or all-lowercase variable name *)
 variable_name = all_upper_name | all_lower_name;
@@ -39,6 +42,7 @@ sign = "+" | "-";
 statement_separator = { whitespace }, ";", { whitespace };
 
 (* Operators *)
+arithmetic_operator = plus_op | minus_op | divide_op | multiply_op;
 plus_op = { whitespace }, "+", { whitespace };
 minus_op = { whitespace }, "-", { whitespace };
 divide_op = { whitespace }, "/", { whitespace };
