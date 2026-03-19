@@ -34,13 +34,13 @@ all_lower_name = low_alpha, { low_alpha };
 
 (* Uppercase alphabet, for use in variable names *)
 up_alpha = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I"
-  | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
-  | "U" | "V" | "W" | "X" | "Y" | "Z";
+    | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
+    | "U" | "V" | "W" | "X" | "Y" | "Z";
 
 (* Lowercase alphabet, for use in variable names *)
 low_alpha = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i"
-  | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t"
-  | "u" | "v" | "w" | "x" | "y" | "z";
+    | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t"
+    | "u" | "v" | "w" | "x" | "y" | "z";
 
 (* Defines an optionally signed integer of one or more digits *)
 integer = [ sign ] , digit , { digit };
